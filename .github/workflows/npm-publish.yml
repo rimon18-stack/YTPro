@@ -1,12 +1,11 @@
-
 name: Publish to NPM
 
 on:
- push:
-   paths:
-    - 'scripts/package.json'
-   branches: [ main ]
-
+  push:
+    paths:
+      - 'scripts/package.json'
+    branches: [main]
+  workflow_dispatch:  
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
